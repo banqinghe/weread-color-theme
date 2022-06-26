@@ -1,0 +1,34 @@
+{
+  "name": "微信读书护眼模式",
+  "description": "开启 Web 版微信读书护眼模式",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "/icons/favicon_16h.png",
+      "32": "/icons/favicon_32h.png",
+      "48": "/icons/favicon_48h.png",
+      "144": "/icons/favicon_144h.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "declarativeContent", "activeTab", "scripting"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Opens index.html"
+    }
+  },
+  "icons": {
+    "16": "/icons/favicon_16h.png",
+    "32": "/icons/favicon_32h.png",
+    "48": "/icons/favicon_48h.png",
+    "144": "/icons/favicon_144h.png"
+  }
+}
